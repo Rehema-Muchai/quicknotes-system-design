@@ -13,7 +13,7 @@
 
 ## Request & Response Examples
 
-### Create a Note (`POST /notes`)
+## Create a Note (`POST /notes`)
 **Request Body:**
 ```json
 {
@@ -31,7 +31,7 @@
   "createdAt": "2023-10-25T10:00:00Z"
 }
 
-### List Notes (GET /notes)
+## List Notes (GET /notes)
 Response Body (200 OK):
 [
   {
@@ -43,10 +43,10 @@ Response Body (200 OK):
   }
 ]
 
-### Error Status Codes
-### Status Code
-### Description
-### Example Scenario
+## Error Status Codes
+## Status Code
+## Description
+## Example Scenario
 400 Bad Request
 The request is malformed or missing required fields.
 Sending POST /notes without a "title" field.
@@ -67,7 +67,7 @@ Requesting GET /notes/999 when note 999 does not exist.
 An unexpected error occurred on the server.
 The database connection fails while trying to save a note.
 
-### Example Error Response Body:
+## Example Error Response Body:
 {
   "error": "Bad Request",
   "message": "The 'title' field is required and cannot be empty."
